@@ -38,3 +38,4 @@ No data files are included in this repository.
 ## Notebooks
 
 - `01_explore.ipynb`: checks on one route (M15) whether the two datasets can be compared segment by segment. Roughly 88% of trips are on segments present in both years. The unmatched come from a moved timepoint and a renumbered stop ID.
+- `02_process.ipynb`: combines the two raw CSVs into a single parquet file of weekday peak-hour rows, from January 2023 to August 2026, leaving about 12M rows. It is relatively slow to run since it reads the full CSVs.
